@@ -1,6 +1,17 @@
 #you have two numbers represented by a linked list, where each node contains a single digit. The digits are stored in reverse order, such that the 1's digit is at the head of the list. Write a function that adds the two numbers and returns the sum as a linked list. 
 import unittest
 
+# Initialize current node to dummy head of the returning list.
+# Initialize carry to 00.
+# Initialize pp and qq to head of l1l1 and l2l2 respectively.
+# Loop through lists l1l1 and l2l2 until you reach both ends.
+# Set xx to node pp's value. If pp has reached the end of l1l1, set to 00.
+# Set yy to node qq's value. If qq has reached the end of l2l2, set to 00.
+# Set sum = x + y + carrysum=x+y+carry.
+# Update carry = sum / 10
+# Create a new node with the digit value of (sum \bmod 10)(summod10) and set it to current node's next, then advance current node to next.
+# Advance both pp and qq.
+
 
 def sum_lists(num1, num2):
 
